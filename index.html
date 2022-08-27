@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Password Validator</title>
+    <link rel="stylesheet" href="../bootstrap-5.2.0-beta1-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/1e5c12ce8a.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Alata&family=Fredoka+One&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Delius&display=swap" rel="stylesheet">
+</head>
+<body>
+   
+
+
+     <div class="container">
+
+        <div class="row">
+            <div class="col-xm-12 col-sm-3 col-md-3 col-lg-3">
+              <p>
+                <ul>
+                  <li id="uppercase"> Password contains an uppercase </li>
+                  <li id="twoMoreDigit">Password contains two or more digits</li>
+                  <li id="nonWord" > Password contains non-word character.</li>
+                  <li id="hasNumber" > Password contains a number</li>       
+                </ul>
+       </p>
+       Newly learnt and integrated Content: #1.Regex #2.CSS Media Query #3.Dom styling using JS #4. Bootstrap grid
+
+       This project was built using javascipt, css ,html and bootstrap grid.
+       
+       After a week of learning Regex , CSS Media Query I have been able to come out with a simple but responsive login Page that does the following:
+       
+       1.Uses Regex to validate Passwords
+       
+       Has smooth transition of Background image on breakpoints
+       3.Transitions password instructions to light green when fulfilled oninput
+       
+       Tells user if password is strong or weak on onsubmit.
+
+            
+            </div>
+                 
+            <div id="middle" class="col-xm-6 col-sm-6 col-md-6 col-lg-6">
+
+              <!-- Start -->
+              <form id="form">
+                <div id="caption">
+                  <center>
+                    LOGIN PAGE
+                  </center>
+                 
+                </div>
+                
+
+
+                <div class="mb-4 top ">
+                    <center>
+                      <label for="email" >Email address</label>
+                    </center>  
+                    <i class="fa-regular fa-at  iconkey"></i>
+                    <input type="email" class="field" id="email" >
+                    <div id="emailHelp" > 
+                      <center> <small> We'll never share your email with anyone else.</small>
+                      </center>
+                    </div>
+                </div>
+
+                <!--password area-->
+
+                <div class="mb-4">
+                    <center> <label for="password" class="form-label">Password <small id="showpassword">---Show<input type="checkbox" id ="fieldcheck" onclick="passwordTog()" name="checkbox"></small> </label></center>
+                    <i class="fa-solid fa-key iconkey"  ></i>
+                    <input type="password"   value="password"  class="field" id="password"> 
+                   
+                  
+                </div>
+                <!--end of password area-->
+
+
+                <!--submit btn-->
+                <center><button id="btnLast" type="submit">CREAT ACCOUNT</button></center>
+
+
+                
+               </form> 
+              <!-- End -->
+
+                
+            </div>
+            <div class="col-xm-12 col-sm-3 col-md-3 col-lg-3">
+
+     
+            </div>
+
+            
+
+            </div><!--row-->
+            
+
+       
+     </div><!--container-->
+
+        
+     <script src="script.js"></script>
+    <script src="../bootstrap-5.2.0-beta1-dist/js/bootstrap.bundle.js"></script>
+
+</body>
+</html>
